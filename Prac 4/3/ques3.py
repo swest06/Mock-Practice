@@ -1,15 +1,23 @@
-def main():
+n = int(input("how many lines: "))
+txt = []
+l = 1
 
-    lst2 = [1, 2, 3, 4]
+# Adds words in line to list
+while n > 0:
+    line = str(input("line {}: ".format(l)))
+    a = line.split()
+    for i in a:
+        txt.append(i)
+    n -= 1
+    l += 1
 
-    n = int(input("number of lines"))
+# Sorts words in descending order of occurrence
+x = sorted(txt, key=txt.count,reverse=True)
 
-    for i in range(0, n):
-        txt = input()
-        lst = txt.split()
-        print(lst)
-
-
-if __name__ == '__main__':
-    main()
-
+# Prints words (doesn't repeat same word twice)
+print(x[0])
+j = x[0]
+for i in x:
+    if i != j:
+        print(i)
+        j = i
