@@ -1,5 +1,5 @@
 def func(lst, num):
-    print(num in lst)
+    print(num in set(lst))
 
 
 lst = [1,2,3,4,5]
