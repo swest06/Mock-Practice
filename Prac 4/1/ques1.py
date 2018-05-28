@@ -1,4 +1,4 @@
-def elem_swap(list):
+\def elem_swap(list):
     max = list[0]
     min = list[0]
     maxind = 0
