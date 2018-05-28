@@ -11,8 +11,10 @@ while n > 0:
     n -= 1
     l += 1
 
+# Sorts words in alphabetical order
+y = sorted(txt)
 # Sorts words in descending order of occurrence
-x = sorted(txt, key=txt.count,reverse=True)
+x = sorted(y, key=y.count, reverse=True)
 
 # Prints words (doesn't repeat same word twice)
 print(x[0])
